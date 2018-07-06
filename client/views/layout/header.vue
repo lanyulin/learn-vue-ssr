@@ -6,16 +6,16 @@
 
 <script>
   export default {
-    name: "Header",
+    name: 'Header'
   }
 </script>
 
-<style lang="less" scoped>
+<style lang="less" module>
 .main-header{
   text-align: center;
   h1{
     font-size: 100px;
-    color: #f00;
+    color: #f88;
     margin: 20px;
   }
 }

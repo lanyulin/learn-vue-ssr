@@ -11,15 +11,15 @@
 
 <script>
   export default {
-    name: "item",
+    name: 'item',
     props: {
       todo: {
         type: Object,
-        require: true,
+        require: true
       }
     },
     methods: {
-      deleteTodo() {
+      deleteTodo () {
         this.$emit('del', this.todo.id)
       }
     }
@@ -68,7 +68,7 @@
     content: url('../assets/images/round.svg')
   }*/
   &:checked:after {
-    content: url('../assets/images/done.svg')
+    content: url('../../assets/images/done.svg')
   }
 }
 .destory {
@@ -78,10 +78,9 @@
   bottom: 0;
   width: 40px;
   height: 40px;
-  margin: auto 0;
+  margin: 0 auto 10px;
   font-size: 30px;
   color: #cc9a9a;
-  margin-bottom: 11px;
   transition: color 0.2s ease-out;
   background-color: transparent;
   appearance: none;

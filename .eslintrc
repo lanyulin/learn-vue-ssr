@@ -1,0 +1,16 @@
+{
+  "extends": "standard",
+  "plugins": [
+    "html"
+  ],
+  "parserOptions": {
+   /* "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    }*/
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "no-new": "off"
+  }
+}

@@ -1,14 +1,14 @@
-import '../assets/styles/footer.less';
+import '../../assets/styles/footer.less'
 
 export default {
-  data() {
+  data () {
     return {
       author: 'lanmao'
     }
   },
-  render(){
+  render () {
     return (
-      <div id="footer">
+      <div id='footer'>
         <span>Written by {this.author}</span>
       </div>
     )
