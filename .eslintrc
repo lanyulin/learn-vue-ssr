@@ -3,13 +3,15 @@
   "plugins": [
     "html"
   ],
+ // "parser": "babel-eslint",
   "parserOptions": {
-   /* "ecmaFeatures": {
+    "parser": "babel-eslint"
+  /*  "ecmaVersion": 6,
+    "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
       "jsx": true
     }*/
   },
-  "parser": "babel-eslint",
   "rules": {
     "no-new": "off"
   }
