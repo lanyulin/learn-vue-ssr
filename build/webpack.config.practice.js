@@ -29,7 +29,7 @@ const defaultPlugins = [
 ]
 
 let config = merge(baseConfig, {
-  entry: path.join(__dirname, '../practice/instance/index.js'),
+  entry: path.join(__dirname, '../practice/index.js'),
   module: {
     rules: [{
       test: /\.less/,
