@@ -11,12 +11,13 @@ const isDev = process.env.NODE_ENV === 'development'
 const devServer = {
   contentBase: path.resolve(__dirname, '../dist'),
   port: 8000,
-  host: '0.0.0.0',
+  host: '127.0.0.1',
   overlay: {
     errors: true // 编译中的错误，显示出来
   },
   open: true, // 启动server的时候，自动打开浏览器
-  hot: true
+  hot: true,
+  historyApiFallback: true // 它依赖于HTML5 history API，如果设置为true，所有的跳转将指向index.html
 }
 
 const defaultPlugins = [
@@ -25,7 +26,9 @@ const defaultPlugins = [
       NODE_ENV: isDev ? '"development"' : '"production"'
     }
   }),
-  new HtmlWebpackPlugin(),
+  new HtmlWebpackPlugin({
+    template: path.join(__dirname, 'template.html')
+  }),
   new VueLoaderPlugin()
 ]
 

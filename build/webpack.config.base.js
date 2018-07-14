@@ -6,6 +6,7 @@ const config = {
   entry: path.join(__dirname, '../client/index.js'),
   output: {
     filename: 'bundle.js',
+    publicPath: '/',
     path: path.join(__dirname, '../dist')
   },
   module: {

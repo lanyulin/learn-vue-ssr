@@ -26,15 +26,19 @@
   import Item from './item.vue'
 import Tabs from './tabs.vue'
 
-let id = 0
+  let id = 0
 
-export default {
+  export default {
     name: 'todo',
     data () {
       return {
         todos: [],
         filter: 'all'
       }
+    },
+    props: ['id'],
+    mounted () {
+      // console.log(this.id)
     },
     computed: {
       filteredTodos () {
@@ -44,6 +48,10 @@ export default {
         const completed = this.filter === 'completed'
         return this.todos.filter(todo => completed === todo.completed)
       }
+    },
+    beforeRouteEnter (to, from, next) {
+      console.log('todo before enter')
+      next()
     },
     components: {
       Item,
