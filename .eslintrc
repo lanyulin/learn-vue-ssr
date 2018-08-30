@@ -12,6 +12,7 @@
     }
   },*/
   "rules": {
-    "no-new": "off"
+    "no-new": "off",
+    "space-before-function-paren": "off"
   }
 }

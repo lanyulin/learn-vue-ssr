@@ -38,7 +38,7 @@ new Vue({
   template: `
     <div>
       <comp-one ref="comp">
-        <span slot="header" ref="span">{{value}}</span>  // 这个变量是引用组件的实例data，即123
+        <span slot="header" ref="span">{{value}}</span>  // 这个变量是引用组件的实例data
         <span slot="body">this is body</span>
         <span slot-scope="props">{{props.text}}</span>   // 作用域插槽，props表示组件comp-one传入的props，直接使用
       </comp-one>
